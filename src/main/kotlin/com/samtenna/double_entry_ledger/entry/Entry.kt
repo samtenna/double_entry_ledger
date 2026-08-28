@@ -7,6 +7,7 @@ import java.util.UUID
 data class Entry(
     val id: UUID,
     val accountId: UUID,
+    val transactionId: UUID,
     val amount: BigDecimal,
     val description: String,
     val direction: EntryDirection,

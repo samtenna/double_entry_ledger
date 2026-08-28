@@ -17,6 +17,7 @@ class EntryTests {
             Entry(
                 id = UUID.randomUUID(),
                 accountId = UUID.randomUUID(),
+                transactionId = UUID.randomUUID(),
                 amount = BigDecimal(amount),
                 description = "",
                 direction = EntryDirection.CREDIT,
@@ -31,6 +32,7 @@ class EntryTests {
             Entry(
                 id = UUID.randomUUID(),
                 accountId = UUID.randomUUID(),
+                transactionId = UUID.randomUUID(),
                 amount = BigDecimal(100),
                 description = "",
                 direction = EntryDirection.CREDIT,

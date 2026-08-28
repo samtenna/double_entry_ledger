@@ -20,6 +20,7 @@ class TransactionTests {
         return Entry(
             id = id,
             accountId = UUID.randomUUID(),
+            transactionId = UUID.randomUUID(),
             amount = BigDecimal(amount),
             description = "",
             direction = direction,
