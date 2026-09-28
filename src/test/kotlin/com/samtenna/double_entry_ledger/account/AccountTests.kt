@@ -43,7 +43,7 @@ class AccountTests {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = ["", "A", "gbp", "GBPG", $$"U$D", "GB3"])
+    @ValueSource(strings = ["", "A", "gbp", "GBPG", "U\$D", "GB3"])
     fun `Account must reject an invalid or missing currency code`(currency: String) {
         assertFailsWith<IllegalArgumentException> {
             Account(

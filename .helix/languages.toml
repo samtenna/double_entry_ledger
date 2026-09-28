@@ -1,0 +1,13 @@
+[[language]]
+name = "kotlin"
+language-servers = [ "kotlin-language-server" ]
+
+[language-server.kotlin-language-server]
+command = "kotlin-language-server"
+timeout = 120
+
+[language-server.kotlin-language-server.config.kotlin.compiler.jvm]
+target = "21"
+
+[language-server.kotlin-language-server.config.compiler.jvm]
+target = "21"
